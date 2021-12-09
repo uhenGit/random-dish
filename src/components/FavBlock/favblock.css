@@ -1,0 +1,39 @@
+.slider {
+    position: relative;
+}
+.slide-inner {
+    text-align: center;
+}
+.slide-inner img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    top: 38%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0,.1);
+}
+.arrow:hover,
+.arrow:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,.2);
+}
+.arrow:focus {
+    outline: 1px solid rgb(0,0,0);
+}
+.arrow.prev {
+    left: 1rem;
+}
+.arrow.next {
+    right: 1rem;
+}

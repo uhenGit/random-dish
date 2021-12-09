@@ -1,0 +1,35 @@
+.sceleton-wrap {
+    width: 100%;
+    padding: 2rem 0;
+}
+.sceleton {
+    animation: loading 1s linear infinite alternate;
+}
+@keyframes loading {
+    0% {
+        background-color: rgb(163, 184, 194);
+    }
+    100% {
+        background-color: rgb(240, 243, 245);
+    }
+}
+.header {
+    min-width: 50%;
+    height: 2rem;
+    border-radius: 3px;
+    margin-bottom: .75rem;
+}
+.sceleton-recipe {
+    width: 90%;
+}
+.img {
+    min-width: 25vw;
+    min-height: 60vh;
+    border-radius: 8px;
+}
+.ul {
+    width: 17vw;
+    min-height: 50vh;
+    border-radius: 8px;
+    margin: 0 1rem;
+}

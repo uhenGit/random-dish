@@ -1,0 +1,7 @@
+export const FETCH_DISH = 'FETCH_DISH'
+export const FETCH_SUCCESS = 'FETCH_SUCCESS'
+export const FETCH_ERROR = 'FETCH_ERROR'
+export const ADD_NEW_DISH = 'ADD_NEW_DISH'
+export const ADD_TO_FAVS = 'ADD_TO_FAVS'
+export const REMOVE_FROM_FAVS = 'REMOVE_FROM_FAVS'
+export const LOADING = 'LOADING'
