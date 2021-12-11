@@ -16,8 +16,8 @@ const AddRemoveBtn = ({meal}) => {
     }       
     return (
         <div className="btn-wrap">
-            {!isFav ? <button onClick={() => dispatch(addToFavs(meal))}>Add</button> :
-            <button onClick={() => dispatch(remFromFavs(mealId))}>Remove</button>}
+            {!isFav ? <button onClick={() => dispatch(addToFavs(meal))}>Add to favs</button> :
+            <button onClick={() => dispatch(remFromFavs(mealId))}>Remove from favs</button>}
         </div>
     )
 }

@@ -7,14 +7,21 @@ const AddForm = (props) => {
     const dispatch = useDispatch()
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
+    const [isShow, setIsShow] = useState(false)
     const handleInput = (e) => {
         setTitle(e.target.value)
+        if (isShow) setIsShow(false)
     }
     const handleText = (e) => {
         setBody(e.target.value)
+        if (isShow) setIsShow(false)
     }
     const handleForm = (e) => {
         e.preventDefault()
+        if (title === '' || body === '') {
+            setIsShow(true)
+            return
+        }
         const dish = {title, body}
         dispatch(addNewDish(dish))
         setTitle('')
@@ -33,6 +40,7 @@ const AddForm = (props) => {
             <label>
                 <textarea name="dishBody" cols="30" rows="10" onChange={handleText} value={body}></textarea>
             </label>
+            {isShow && <span style={{color: 'rgb(255, 0, 0)'}}>All fields are required</span>}
             <div className="btn-wrap">
                 <button type="submit">Add custom dish</button>
             </div>
